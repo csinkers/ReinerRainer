@@ -1,55 +1,37 @@
 <Query Kind="Program">
   <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\SerdesNet.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\SerdesNet.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Superpower.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Superpower.dll</Reference>
   <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\UAlbion.Api.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\UAlbion.Api.dll</Reference>
   <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\UAlbion.Base.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\UAlbion.Base.dll</Reference>
   <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\UAlbion.Config.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\UAlbion.Config.dll</Reference>
   <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\UAlbion.Core.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\UAlbion.Core.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\UAlbion.Core.Veldrid.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\UAlbion.Core.Veldrid.dll</Reference>
   <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\UAlbion.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\UAlbion.dll</Reference>
   <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\UAlbion.Formats.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\UAlbion.Formats.dll</Reference>
   <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\UAlbion.Game.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\UAlbion.Game.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\UAlbion.Game.Veldrid.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\UAlbion.Game.Veldrid.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\UAlbion.Scripting.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\UAlbion.Scripting.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Veldrid.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Veldrid.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Veldrid.ImageSharp.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Veldrid.ImageSharp.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Veldrid.ImGui.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Veldrid.ImGui.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Veldrid.MetalBindings.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Veldrid.MetalBindings.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Veldrid.OpenGLBindings.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Veldrid.OpenGLBindings.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Veldrid.RenderDoc.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Veldrid.RenderDoc.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Veldrid.SDL2.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Veldrid.SDL2.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Veldrid.SPIRV.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Veldrid.SPIRV.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Veldrid.StartupUtilities.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Veldrid.StartupUtilities.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Veldrid.Utilities.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Veldrid.Utilities.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\vk.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\vk.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Vortice.D3DCompiler.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Vortice.D3DCompiler.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Vortice.Direct3D11.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Vortice.Direct3D11.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Vortice.DirectX.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Vortice.DirectX.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Vortice.DXGI.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Vortice.DXGI.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Vortice.Mathematics.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Vortice.Mathematics.dll</Reference>
-  <Reference Relative="..\..\build\UAlbion\bin\Debug\net6.0\Vortice.Runtime.COM.dll">C:\Depot\bb\ualbion\build\UAlbion\bin\Debug\net6.0\Vortice.Runtime.COM.dll</Reference>
-  <Namespace>SixLabors.ImageSharp</Namespace>
-  <Namespace>SixLabors.ImageSharp.Formats.Png</Namespace>
-  <Namespace>SixLabors.ImageSharp.PixelFormats</Namespace>
-  <Namespace>System.Runtime.InteropServices</Namespace>
   <Namespace>UAlbion</Namespace>
   <Namespace>UAlbion.Api</Namespace>
   <Namespace>UAlbion.Api.Visual</Namespace>
   <Namespace>UAlbion.Config</Namespace>
-  <Namespace>UAlbion.Game.Veldrid.Assets</Namespace>
-  <Namespace>UAlbion.Core.Visual</Namespace>
-  <Namespace>UAlbion.Formats.Assets.Maps</Namespace>
-  <Namespace>UAlbion.Game.Assets</Namespace>
-  <Namespace>System.Text.Json</Namespace>
-  <Namespace>UAlbion.Formats.Assets</Namespace>
-  <Namespace>UAlbion.Scripting</Namespace>
   <Namespace>UAlbion.Formats</Namespace>
-  <Namespace>UAlbion.Game</Namespace>
+  <Namespace>UAlbion.Formats.Assets</Namespace>
   <Namespace>UAlbion.Formats.Assets.Labyrinth</Namespace>
+  <Namespace>UAlbion.Formats.Assets.Maps</Namespace>
+  <Namespace>UAlbion.Game</Namespace>
+  <Namespace>UAlbion.Game.Assets</Namespace>
+  <RemoveNamespace>System.Collections</RemoveNamespace>
+  <RemoveNamespace>System.Data</RemoveNamespace>
+  <RemoveNamespace>System.Diagnostics</RemoveNamespace>
+  <RemoveNamespace>System.Linq.Expressions</RemoveNamespace>
+  <RemoveNamespace>System.Reflection</RemoveNamespace>
+  <RemoveNamespace>System.Text</RemoveNamespace>
+  <RemoveNamespace>System.Threading</RemoveNamespace>
+  <RemoveNamespace>System.Transactions</RemoveNamespace>
+  <RemoveNamespace>System.Xml</RemoveNamespace>
+  <RemoveNamespace>System.Xml.Linq</RemoveNamespace>
+  <RemoveNamespace>System.Xml.XPath</RemoveNamespace>
   <RuntimeVersion>6.0</RuntimeVersion>
 </Query>
 
-AssetType[] Types = new[] { 
+readonly AssetType[] TypesToConvert = new[] { 
 	AssetType.EventText,
 	AssetType.MapText,
 	AssetType.Labyrinth,
@@ -65,12 +47,12 @@ AssetType[] Types = new[] {
 	AssetType.TacticalIcon,
 };
 
-const UAlbion.Base.SmallNpc SmallNpcId = UAlbion.Base.SmallNpc.Man;
-const UAlbion.Base.LargeNpc LargeNpcId = UAlbion.Base.LargeNpc.Rainer;
+const UAlbion.Base.SmallNpc          SmallNpcId = UAlbion.Base.SmallNpc.Man;
+const UAlbion.Base.LargeNpc          LargeNpcId = UAlbion.Base.LargeNpc.Rainer;
 const UAlbion.Base.MonsterGraphics MonsterGfxId = UAlbion.Base.MonsterGraphics.Security;
-const UAlbion.Base.DungeonObject DungeonObjId = UAlbion.Base.DungeonObject.Security;
-const UAlbion.Base.Portrait PartyPortraitId = UAlbion.Base.Portrait.Rainer;
-const UAlbion.Base.Portrait NpcPortraitId = UAlbion.Base.Portrait.RainerHofstedt;
+const UAlbion.Base.DungeonObject   DungeonObjId = UAlbion.Base.DungeonObject.Security;
+const UAlbion.Base.Portrait     PartyPortraitId = UAlbion.Base.Portrait.Rainer;
+const UAlbion.Base.Portrait       NpcPortraitId = UAlbion.Base.Portrait.RainerHofstedt;
 
 void Main()
 {
@@ -126,14 +108,11 @@ void Main()
 
 	object Convert(AssetId id, object asset)
 	{
-		if (asset == null) return null;
+		if (asset == null)
+			return null;
 		
 		if (asset is BaseMapData map)
 		{
-			if (map is MapData3D map3d)
-			{
-			}
-
 			foreach (var npc in map.Npcs)
 			{
 				switch (map.MapType)
@@ -150,7 +129,11 @@ void Main()
 
 			return map;
 		}
-		else if (asset is LabyrinthData lab)
+
+		if (asset is ListStringCollection stringList)
+			return new ListStringCollection(stringList.Select(ProcessString).ToList());
+		
+		if (asset is LabyrinthData lab)
 		{
 			foreach(var obj in lab.Objects)
 			{
@@ -168,8 +151,10 @@ void Main()
 					obj.FrameCount = (byte)dungeonObj.Regions.Count;
 				}
 			}
+			return lab;
 		}
-		else if (asset is CharacterSheet sheet)
+		
+		if (asset is CharacterSheet sheet)
 		{
 			if (id == (AssetId)(MonsterId)UAlbion.Base.Monster.ServiceRobot) return asset;
 
@@ -181,27 +166,20 @@ void Main()
 			sheet.Gender = Gender.Male;
 			sheet.PortraitId = sheet.Type == CharacterType.Party ? PartyPortraitId : NpcPortraitId;
 			
-			if (sheet.Type == CharacterType.Monster || sheet.Type == CharacterType.Party)
+			if (sheet.Type == CharacterType.Monster)
 			{
 				sheet.Attributes.CopyFrom(rainerSheet.Attributes);
 				sheet.Combat.CopyFrom(rainerSheet.Combat);
 				sheet.Magic.CopyFrom(rainerSheet.Magic);
-				sheet.Morale = rainerSheet.Morale;
 				sheet.Skills.CopyFrom(rainerSheet.Skills);
-			}
-			
-			if (sheet.Type == CharacterType.Monster)
-			{
+				sheet.Morale = rainerSheet.Morale;
 				sheet.Monster.CopyFrom(securitySheet.Monster);
 				sheet.MonsterGfxId = MonsterGfxId;
 			}
+			return sheet;
 		}
-		else if (asset is ListStringCollection stringList)
-		{
-			var processed = stringList.Select(ProcessString).ToList();
-			return new ListStringCollection(processed);
-		}
-		else if (asset is ITexture)
+		
+		if (asset is ITexture)
 		{
 			if (id.Type == AssetType.Portrait)
 				return (id.Id < 11) ? partyPortrait : npcPortrait;
@@ -215,36 +193,28 @@ void Main()
 				return largePartyGfx;
 			if (id.Type == AssetType.TacticalIcon && id.Id < 8)
 				return tacticalGfx;
-
 			if (id == (AssetId)(SpriteId)SmallNpcId)
-			{
 				return assets.LoadTexture(UAlbion.Base.SmallPartyMember.Rainer);
-			}
-			else if (id == (AssetId)(SpriteId)MonsterGfxId)
+			
+			if (id == (AssetId)(SpriteId)MonsterGfxId)
 			{
 				// TODO
 			}
-			else if (id == (AssetId)(SpriteId)DungeonObjId)
+			
+			if (id == (AssetId)(SpriteId)DungeonObjId)
 			{
 				// TODO
 			}
+
 			return asset;
 		}
-		else if (asset is string s)
-		{
-			if (id == (AssetId)(WordId)UAlbion.Base.Word.DDT)
-				return "HHH";
-		}
-		else
-		{
-			$"Unhandled type: {id} is a {asset?.GetType().Name}".Dump();
-		}
-
+		
+		$"Unhandled type: {id} is a {asset?.GetType().Name}".Dump();
 		return asset;
 	}
 
 	var converter = new AssetConverter(AssetMapping.Global, disk, new FormatJsonUtil(), new[] { "Base" }, destMod);
-	converter.Convert(null, Types.ToHashSet(), null, Convert);
+	converter.Convert(null, TypesToConvert.ToHashSet(), null, Convert);
 	converter.Convert(extraIds, null, null, Convert);
 
 	// Need to do SYSTEXTS specially
@@ -275,54 +245,49 @@ void FixSysText(string path)
 }
 
 static string[] _firstNames = {
-	"Agida", "Akiir", "Akira", "Alice", "Aliis", "Althea", "Amine", "Anne", "Aretha", "Argim", "Arrim", "Arthor", "Aurino", "Bagga", "Bennos", "Bero", "Bewir", "Birin", "Birrh", "Bradir",
-	"Bragona", "Branagh", "Brann", "Brid", "Cairnain", "Cera", "Christine", "Colonel", "Coskon", "Cuarnainn", "Darios", "Dolo", "Dranbar", "Drannagh", "Drirr", "Edjirr", "Fasiir", "Ferina", "Firina", "Fradh",
-	"Frinja", "Frinos", "Gard", "Garris", "Gerwad", "Giria", "Gridri", "Griibo", "Hanii", "Harriet", "Herras", "Irkith", "Jalia", "Janiis", "Jeros", "Jikraii", "Jila", "Jiris", "Joe",
-	"Jonatharh", "Kapitän", "Kariah", "Khunag", "Khunagh", "Klirna", "Konny", "Kontos", "Kossea", "Krai", "Kriis", "Krinn", "Kryte", "Kyla", "Laila", "Larina", "Leitos", "Llanaer", "Maire", "Makaio",
-	"Mellthas", "Melthar", "Merdger", "Michelle", "Morpatt", "Mykonou", "Nadje", "Nadri", "Ned", "Ned", "Nelly", "Nemos", "Nisrii", "Nodd", "Ohl", "Oibelos", "Osini", "Otikro", "Ouktero", "Pardhainn",
-	"Peleitos", "Perron", "Posch", "Rabir", "Rainer", "Ramina", "Rejira", "Rhain", "Rhuainaigh", "Rhunagh", "Rifrako", "Riko", "Riolea", "Robert", "Robert", "Roves", "Sarena", "Sarrin", "Siobhan", "Sira",
-	"Snird", "Sojekos", "Srelan", "Stiriik", "Synja", "Tamno", "Tharnos", "Tori", "Torko", "Viri", "Vrik", "Vris", "Wania", "Winion", "Zebenno", "Zeibe", "Zerruma", "Zirna", "Zirr",
-	"Captain", "Snoopy", "Chris",
-	"Siobhan", "Tom", "Drirr", "Sira", "Mellthas", "Harriet", "Joe", "Khunag", "John", "Anngret", "Herbert", "Giuseppe", "Huo",
+	"Agida", "Akiir", "Akira", "Alice", "Aliis", "Althea", "Amine", "Anngret", "Anne", "Aretha", "Argim", "Arrim", "Arthor", "Aurino", 
+	"Bagga", "Bennos", "Bero", "Bewir", "Birin", "Birrh", "Bradir",	"Bragona", "Branagh", "Brann", "Brid", 
+	"Cairnain", "Captain", "Cera", "Christine", "Colonel", "Coskon", "Cuarnainn", 
+	"Darios", "Dolo", "Dranbar", "Drannagh", "Drirr", 
+	"Edjirr", 
+	"Fasiir", "Ferina", "Firina", "Fradh", "Frinja", "Frinos", 
+	"Gard", "Garris", "Gerwad", "Giria", "Giuseppe", "Gridri", "Griibo", 
+	"Hanii", "Harriet", "Herbert", "Herras", "Huo",
+	"Irkith",
+	"Jalia", "Janiis", "Jeros", "Jikraii", "Jila", "Jiris", "Joe", "John", "Jonatharh", "Jonathahr" /*typo shows up twice in FR*/,
+	"Kapitän", "Kariah", "Khunagh", "Klirna", "Konny", "Kontos", "Kossea", "Krai", "Kriis", "Krinn", "Kryte", "Kyla", 
+	"Laila", "Larina", "Leitos", "Llanaer", 
+	"Maire", "Makaio", "Mellthas", "Melthar", "Merdger", "Michelle", "Morpatt", "Mykonou", 
+	"Nadje", "Nadri", "Ned", "Nelly", "Nemos", "Nisrii", "Nodd",
+	"Ohl", "Oibelos", "Osini", "Otikro", "Ouktero",
+	"Pardhainn", "Peleitos", "Perron", "Posch",
+	"Rabir", "Rainer", "Ramina", "Rejira", "Rhain", "Rhuainaigh", "Rhunagh", "Rifrako", "Riko", "Riolea", "Robert", "Roves",
+	"Sarena", "Sarrin", "Siobhan", "Sira", "Snird", "Snoopy", "Sojekos", "Srelan", "Stiriik", "Synja",
+	"Tamno", "Tharnos", "Tom", "Tori", "Torko", 
+	"Viri", "Vrik", "Vris", 
+	"Wania", "Winion", 
+	"Zebenno", "Zeibe", "Zerruma", "Zirna", "Zirr",
+	
+	// names that are substrings of others need to come after them to avoid premature replacement
+	"Chris", "Khunag",
 };
 
 static string[] _surnames = {
-	"Frill",
-	"Mitsamati",
-	"Takashi",
-	"Dorbeck",
-	"Priver",
-	"Bernard",
-	"Brandt",
-	"Laton",
 	"Ashley",
-	"Shaw",
-	"Wrinn",
-	"Beegle",
-	"Driscoll",
-	"McDermott",
-	"Paul",
-	"Bergmann-Lampe",
-	"Bergmann- Lampe",
-	"Hupka VI",
-	"Piscator",
-	"Jagoda",
+	"Beegle", "Bergmann-Lampe", "Bergmann- Lampe", "Bernard", "Brandt",
+	"Dorbeck", "Driscoll",
+	"Frill",
 	"Gates",
-	"Wong Gang",
+	"Hupka VI",
+	"Jagoda",
+	"Laton",
+	"McDermott", "Mitsamati",
+	"Paul", "Piscator", "Priver",
 	"Qennikos",
+	"Shaw",
+	"Takashi",
+	"Wong Gang", "Wrinn",
 };
-
-static HashSet<UAlbion.Base.DungeonObject> MonsterObjects = new[] {
-	UAlbion.Base.DungeonObject.Iskai, UAlbion.Base.DungeonObject.Iskai2, UAlbion.Base.DungeonObject.Iskai3, UAlbion.Base.DungeonObject.Iskai4, UAlbion.Base.DungeonObject.Iskai5, UAlbion.Base.DungeonObject.Iskai6, UAlbion.Base.DungeonObject.Iskai7, UAlbion.Base.DungeonObject.Iskai8,
-	UAlbion.Base.DungeonObject.IskaiStatic, UAlbion.Base.DungeonObject.IskaiStatic2, UAlbion.Base.DungeonObject.IskaiStatic3, UAlbion.Base.DungeonObject.IskaiStatic4, UAlbion.Base.DungeonObject.IskaiStatic5, UAlbion.Base.DungeonObject.IskaiStatic6, UAlbion.Base.DungeonObject.IskaiStatic7, UAlbion.Base.DungeonObject.IskaiStatic8,
-	UAlbion.Base.DungeonObject.Iskai9, UAlbion.Base.DungeonObject.Iskai10, UAlbion.Base.DungeonObject.Iskai11, UAlbion.Base.DungeonObject.Iskai12, UAlbion.Base.DungeonObject.Iskai13, UAlbion.Base.DungeonObject.Iskai14, UAlbion.Base.DungeonObject.Iskai15, UAlbion.Base.DungeonObject.Iskai16,
-	UAlbion.Base.DungeonObject.Iskai17, UAlbion.Base.DungeonObject.Celt, UAlbion.Base.DungeonObject.Celt2, UAlbion.Base.DungeonObject.Celt3, UAlbion.Base.DungeonObject.Celt4, UAlbion.Base.DungeonObject.FatCelt, UAlbion.Base.DungeonObject.Celt5, UAlbion.Base.DungeonObject.Celt6,
-	UAlbion.Base.DungeonObject.Celt7, UAlbion.Base.DungeonObject.BeardyCelt, UAlbion.Base.DungeonObject.Celt8, UAlbion.Base.DungeonObject.Celt9, UAlbion.Base.DungeonObject.Krondir, UAlbion.Base.DungeonObject.Krondir2, UAlbion.Base.DungeonObject.EvilKangaroo, UAlbion.Base.DungeonObject.IllManneredMoleRat,
-	UAlbion.Base.DungeonObject.EvilKangaroo2, UAlbion.Base.DungeonObject.Krondir3, UAlbion.Base.DungeonObject.PeskyWasp, UAlbion.Base.DungeonObject.Iskai18, UAlbion.Base.DungeonObject.Celt10, UAlbion.Base.DungeonObject.Celt11, UAlbion.Base.DungeonObject.BeardyCelt2, UAlbion.Base.DungeonObject.Demon,
-	UAlbion.Base.DungeonObject.PeskyWasp2, UAlbion.Base.DungeonObject.PeskyWasp3, UAlbion.Base.DungeonObject.PeskyWasp4, UAlbion.Base.DungeonObject.FloatingHand, UAlbion.Base.DungeonObject.IllTemperedMoleRat, UAlbion.Base.DungeonObject.Demon2, UAlbion.Base.DungeonObject.AngryCloud, UAlbion.Base.DungeonObject.Krondir4,
-	UAlbion.Base.DungeonObject.Raptor, UAlbion.Base.DungeonObject.Wizard, UAlbion.Base.DungeonObject.FloatingHand2, UAlbion.Base.DungeonObject.Zombie, UAlbion.Base.DungeonObject.Chest3, UAlbion.Base.DungeonObject.Zombie2, UAlbion.Base.DungeonObject.AngryCloud2, UAlbion.Base.DungeonObject.Spidermajigger,
-	UAlbion.Base.DungeonObject.Security, UAlbion.Base.DungeonObject.Security2, UAlbion.Base.DungeonObject.Celt12, UAlbion.Base.DungeonObject.MutedPuppyDog, UAlbion.Base.DungeonObject.IllTemperedMoleRat2, UAlbion.Base.DungeonObject.Raptor2, UAlbion.Base.DungeonObject.Spidermajigger2,
-}.ToHashSet();
 
 static Regex BuildFirstNameRegex(string[] names) => new Regex($"({string.Join("|", names)})", RegexOptions.Compiled);
 Regex FirstNameRegex = BuildFirstNameRegex(_firstNames);
@@ -343,3 +308,15 @@ string ProcessString(string s)
 		.Replace("Doimlr-Daithasu-Thompson", "Hofstat-Hovsteed-Hoofstad")
 		;
 }
+
+static HashSet<UAlbion.Base.DungeonObject> MonsterObjects = new[] {
+	UAlbion.Base.DungeonObject.Iskai, UAlbion.Base.DungeonObject.Iskai2, UAlbion.Base.DungeonObject.Iskai3, UAlbion.Base.DungeonObject.Iskai4, UAlbion.Base.DungeonObject.Iskai5, UAlbion.Base.DungeonObject.Iskai6, UAlbion.Base.DungeonObject.Iskai7, UAlbion.Base.DungeonObject.Iskai8,
+	UAlbion.Base.DungeonObject.IskaiStatic, UAlbion.Base.DungeonObject.IskaiStatic2, UAlbion.Base.DungeonObject.IskaiStatic3, UAlbion.Base.DungeonObject.IskaiStatic4, UAlbion.Base.DungeonObject.IskaiStatic5, UAlbion.Base.DungeonObject.IskaiStatic6, UAlbion.Base.DungeonObject.IskaiStatic7, UAlbion.Base.DungeonObject.IskaiStatic8,
+	UAlbion.Base.DungeonObject.Iskai9, UAlbion.Base.DungeonObject.Iskai10, UAlbion.Base.DungeonObject.Iskai11, UAlbion.Base.DungeonObject.Iskai12, UAlbion.Base.DungeonObject.Iskai13, UAlbion.Base.DungeonObject.Iskai14, UAlbion.Base.DungeonObject.Iskai15, UAlbion.Base.DungeonObject.Iskai16,
+	UAlbion.Base.DungeonObject.Iskai17, UAlbion.Base.DungeonObject.Celt, UAlbion.Base.DungeonObject.Celt2, UAlbion.Base.DungeonObject.Celt3, UAlbion.Base.DungeonObject.Celt4, UAlbion.Base.DungeonObject.FatCelt, UAlbion.Base.DungeonObject.Celt5, UAlbion.Base.DungeonObject.Celt6,
+	UAlbion.Base.DungeonObject.Celt7, UAlbion.Base.DungeonObject.BeardyCelt, UAlbion.Base.DungeonObject.Celt8, UAlbion.Base.DungeonObject.Celt9, UAlbion.Base.DungeonObject.Krondir, UAlbion.Base.DungeonObject.Krondir2, UAlbion.Base.DungeonObject.EvilKangaroo, UAlbion.Base.DungeonObject.IllManneredMoleRat,
+	UAlbion.Base.DungeonObject.EvilKangaroo2, UAlbion.Base.DungeonObject.Krondir3, UAlbion.Base.DungeonObject.PeskyWasp, UAlbion.Base.DungeonObject.Iskai18, UAlbion.Base.DungeonObject.Celt10, UAlbion.Base.DungeonObject.Celt11, UAlbion.Base.DungeonObject.BeardyCelt2, UAlbion.Base.DungeonObject.Demon,
+	UAlbion.Base.DungeonObject.PeskyWasp2, UAlbion.Base.DungeonObject.PeskyWasp3, UAlbion.Base.DungeonObject.PeskyWasp4, UAlbion.Base.DungeonObject.FloatingHand, UAlbion.Base.DungeonObject.IllTemperedMoleRat, UAlbion.Base.DungeonObject.Demon2, UAlbion.Base.DungeonObject.AngryCloud, UAlbion.Base.DungeonObject.Krondir4,
+	UAlbion.Base.DungeonObject.Raptor, UAlbion.Base.DungeonObject.Wizard, UAlbion.Base.DungeonObject.FloatingHand2, UAlbion.Base.DungeonObject.Zombie, UAlbion.Base.DungeonObject.Chest3, UAlbion.Base.DungeonObject.Zombie2, UAlbion.Base.DungeonObject.AngryCloud2, UAlbion.Base.DungeonObject.Spidermajigger,
+	UAlbion.Base.DungeonObject.Security, UAlbion.Base.DungeonObject.Security2, UAlbion.Base.DungeonObject.Celt12, UAlbion.Base.DungeonObject.MutedPuppyDog, UAlbion.Base.DungeonObject.IllTemperedMoleRat2, UAlbion.Base.DungeonObject.Raptor2, UAlbion.Base.DungeonObject.Spidermajigger2,
+}.ToHashSet();
