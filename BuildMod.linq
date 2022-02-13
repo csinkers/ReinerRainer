@@ -277,16 +277,17 @@ void FixSysText(string path)
 static string[] _firstNames = {
 	"Agida", "Akiir", "Akira", "Alice", "Aliis", "Althea", "Amine", "Anne", "Aretha", "Argim", "Arrim", "Arthor", "Aurino", "Bagga", "Bennos", "Bero", "Bewir", "Birin", "Birrh", "Bradir",
 	"Bragona", "Branagh", "Brann", "Brid", "Cairnain", "Cera", "Christine", "Colonel", "Coskon", "Cuarnainn", "Darios", "Dolo", "Dranbar", "Drannagh", "Drirr", "Edjirr", "Fasiir", "Ferina", "Firina", "Fradh",
-	"Frill", "Frinja", "Frinos", "Gard", "Garris", "Gerwad", "Giria", "Gridri", "Griibo", "Hanii", "Harriet", "Herras", "Irkith", "Jalia", "Janiis", "Jeros", "Jikraii", "Jila", "Jiris", "Joe",
+	"Frinja", "Frinos", "Gard", "Garris", "Gerwad", "Giria", "Gridri", "Griibo", "Hanii", "Harriet", "Herras", "Irkith", "Jalia", "Janiis", "Jeros", "Jikraii", "Jila", "Jiris", "Joe",
 	"Jonatharh", "Kapitän", "Kariah", "Khunag", "Khunagh", "Klirna", "Konny", "Kontos", "Kossea", "Krai", "Kriis", "Krinn", "Kryte", "Kyla", "Laila", "Larina", "Leitos", "Llanaer", "Maire", "Makaio",
 	"Mellthas", "Melthar", "Merdger", "Michelle", "Morpatt", "Mykonou", "Nadje", "Nadri", "Ned", "Ned", "Nelly", "Nemos", "Nisrii", "Nodd", "Ohl", "Oibelos", "Osini", "Otikro", "Ouktero", "Pardhainn",
 	"Peleitos", "Perron", "Posch", "Rabir", "Rainer", "Ramina", "Rejira", "Rhain", "Rhuainaigh", "Rhunagh", "Rifrako", "Riko", "Riolea", "Robert", "Robert", "Roves", "Sarena", "Sarrin", "Siobhan", "Sira",
 	"Snird", "Sojekos", "Srelan", "Stiriik", "Synja", "Tamno", "Tharnos", "Tori", "Torko", "Viri", "Vrik", "Vris", "Wania", "Winion", "Zebenno", "Zeibe", "Zerruma", "Zirna", "Zirr",
 	"Captain", "Snoopy", "Chris",
-	"Siobhan", "Tom", "Drirr", "Sira", "Mellthas", "Harriet", "Joe", "Khunag", "John", "Anngret", "Herbert", 
+	"Siobhan", "Tom", "Drirr", "Sira", "Mellthas", "Harriet", "Joe", "Khunag", "John", "Anngret", "Herbert", "Giuseppe", "Huo",
 };
 
 static string[] _surnames = {
+	"Frill",
 	"Mitsamati",
 	"Takashi",
 	"Dorbeck",
@@ -304,6 +305,11 @@ static string[] _surnames = {
 	"Bergmann-Lampe",
 	"Bergmann- Lampe",
 	"Hupka VI",
+	"Piscator",
+	"Jagoda",
+	"Gates",
+	"Wong Gang",
+	"Qennikos",
 };
 
 static HashSet<UAlbion.Base.DungeonObject> MonsterObjects = new[] {
@@ -331,6 +337,8 @@ string ProcessString(string s)
 	return s
 		.Replace("girlfriend", "\"girlfriend\"")
 		.Replace("Dr..coll", "H..fstadt")
+		.Replace("Sebainah", "Ur-Rainer")
+		.Replace("Rainer-Hofstedt", "Rainer Hofstedt")
 		.Replace("DDT", "HHH")
 		.Replace("Doimlr-Daithasu-Thompson", "Hofstat-Hovsteed-Hoofstad")
 		;
