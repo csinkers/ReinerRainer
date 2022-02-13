@@ -75,11 +75,13 @@ const UAlbion.Base.Portrait NpcPortraitId = UAlbion.Base.Portrait.RainerHofstedt
 void Main()
 {
 	const string destMod = "ReinerRainer";
+	var scriptDir = Path.GetDirectoryName(Util.CurrentQueryPath); // should be something like .../mods/ReinerRainer
+	var baseDir = Path.GetDirectoryName(Path.GetDirectoryName(scriptDir));
+
 	var disk = new FileSystem();
-	disk.CurrentDirectory = @"C:\Depot\bb\ualbion";
+	disk.CurrentDirectory = baseDir;
 	AssetSystem.LoadEvents();
 	var baseExchange = AssetSystem.SetupSimple(disk, AssetMapping.Global, new[] { "Base" });
-	//var destExchange = AssetSystem.SetupSimple(disk, AssetMapping.Global, new[] { destMod });
 	var assets = baseExchange.Resolve<IAssetManager>();
 	var rainerSheet = assets.LoadSheet(UAlbion.Base.PartyMember.Rainer);
 	var securitySheet = assets.LoadSheet(UAlbion.Base.Monster.Secu1);
@@ -91,7 +93,7 @@ void Main()
 	var dungeonObj = assets.LoadTexture(DungeonObjId);
 	var tacticalGfx = assets.LoadTexture(UAlbion.Base.TacticalGraphics.Rainer);
 
-	var ids = new[]
+	var extraIds = new[]
 	{
 		((SpriteId)SmallNpcId).ToString(),
 		((SpecialId)UAlbion.Base.Special.Words1).ToString(),
@@ -243,19 +245,34 @@ void Main()
 
 	var converter = new AssetConverter(AssetMapping.Global, disk, new FormatJsonUtil(), new[] { "Base" }, destMod);
 	converter.Convert(null, Types.ToHashSet(), null, Convert);
-	converter.Convert(ids, null, null, Convert);
+	converter.Convert(extraIds, null, null, Convert);
 
-	/* Need to do SYSTEXTS specially
-	var enSysText = @"C:\Depot\bb\ualbion\mods\ReinerRainer\Albion\CD\XLDLIBS\ENGLISH\SYSTEXTS";
-	var deSysText = @"C:\Depot\bb\ualbion\mods\ReinerRainer\Albion\CD\XLDLIBS\GERMAN\SYSTEXTS";
-	var frSysText = @"C:\Depot\bb\ualbion\mods\ReinerRainer\Albion\CD\XLDLIBS\FRENCH\SYSTEXTS";
-	if (File.Exists(enSysText)) File.WriteAllText(enSysText, ProcessString(File.ReadAllText(enSysText)));
-	if (File.Exists(deSysText)) File.WriteAllText(deSysText, ProcessString(File.ReadAllText(deSysText)));
-	if (File.Exists(frSysText)) File.WriteAllText(frSysText, ProcessString(File.ReadAllText(frSysText)));
-	//*/
+	// Need to do SYSTEXTS specially
+	FixSysText(Path.Combine(scriptDir, "Albion", "CD", "XLDLIBS", "ENGLISH", "SYSTEXTS"));
+	FixSysText(Path.Combine(scriptDir, "Albion", "CD", "XLDLIBS", "GERMAN", "SYSTEXTS"));
+	FixSysText(Path.Combine(scriptDir, "Albion", "CD", "XLDLIBS", "FRENCH", "SYSTEXTS"));
+	
+	// Copy 'initial' files
+	var cdInitial = Path.Combine(scriptDir, "Albion", "CD", "XLDLIBS", "INITIAL");
+	var diskInitial = Path.Combine(scriptDir, "Albion", "XLDLIBS", "INITIAL");
+	if (Directory.Exists(cdInitial) && Directory.Exists(diskInitial))
+		foreach (var file in Directory.EnumerateFiles(cdInitial).Select(Path.GetFileName))
+			File.Copy(Path.Combine(cdInitial, file), Path.Combine(diskInitial, file), true);
 	
 	Console.WriteLine("Done");
-} 
+}
+
+void FixSysText(string path)
+{
+	if (!File.Exists(path))
+		return;
+	
+	var text = File.ReadAllText(path);
+	if (!text.Contains("Tom")) return;
+	
+	var modified = ProcessString(text);
+	File.WriteAllText(path, modified);
+}
 
 static string[] _firstNames = {
 	"Agida", "Akiir", "Akira", "Alice", "Aliis", "Althea", "Amine", "Anne", "Aretha", "Argim", "Arrim", "Arthor", "Aurino", "Bagga", "Bennos", "Bero", "Bewir", "Birin", "Birrh", "Bradir",
