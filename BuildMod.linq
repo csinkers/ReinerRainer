@@ -17,17 +17,6 @@
   <Namespace>UAlbion.Formats.Assets.Maps</Namespace>
   <Namespace>UAlbion.Game</Namespace>
   <Namespace>UAlbion.Game.Assets</Namespace>
-  <RemoveNamespace>System.Collections</RemoveNamespace>
-  <RemoveNamespace>System.Data</RemoveNamespace>
-  <RemoveNamespace>System.Diagnostics</RemoveNamespace>
-  <RemoveNamespace>System.Linq.Expressions</RemoveNamespace>
-  <RemoveNamespace>System.Reflection</RemoveNamespace>
-  <RemoveNamespace>System.Text</RemoveNamespace>
-  <RemoveNamespace>System.Threading</RemoveNamespace>
-  <RemoveNamespace>System.Transactions</RemoveNamespace>
-  <RemoveNamespace>System.Xml</RemoveNamespace>
-  <RemoveNamespace>System.Xml.Linq</RemoveNamespace>
-  <RemoveNamespace>System.Xml.XPath</RemoveNamespace>
   <RuntimeVersion>6.0</RuntimeVersion>
 </Query>
 
@@ -289,9 +278,9 @@ static string[] _surnames = {
 	"Wong Gang", "Wrinn",
 };
 
-static Regex BuildFirstNameRegex(string[] names) => new Regex($"({string.Join("|", names)})", RegexOptions.Compiled);
-Regex FirstNameRegex = BuildFirstNameRegex(_firstNames);
-Regex SurnameRegex = BuildFirstNameRegex(_surnames);
+static Regex BuildNameRegex(string[] names) => new Regex($"({string.Join("|", names)})", RegexOptions.Compiled);
+Regex FirstNameRegex = BuildNameRegex(_firstNames);
+Regex SurnameRegex = BuildNameRegex(_surnames);
 
 string ProcessString(string s)
 {
@@ -301,11 +290,13 @@ string ProcessString(string s)
 	
 	return s
 		.Replace("girlfriend", "\"girlfriend\"")
-		.Replace("Dr..coll", "H..fstadt")
+		.Replace("Dr..coll", "H..fstedt")
 		.Replace("Sebainah", "Ur-Rainer")
 		.Replace("Rainer-Hofstedt", "Rainer Hofstedt")
 		.Replace("DDT", "HHH")
 		.Replace("Doimlr-Daithasu-Thompson", "Hofstat-Hovsteed-Hoofstad")
+		.Replace("British", "German")
+		.Replace("Chinese", "German")
 		;
 }
 

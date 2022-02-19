@@ -1,6 +1,6 @@
 {
     "Name": "ReinerRainer",
     "Description": "Rainer Hofstedt, and nothing but.",
-    "Version": "0.1.0",
+    "Version": "1.0.1",
     "Dependencies": [ "Shaders" ]
 }
