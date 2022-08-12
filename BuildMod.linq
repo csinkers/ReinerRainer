@@ -17,6 +17,7 @@
   <Namespace>UAlbion.Formats.Assets.Maps</Namespace>
   <Namespace>UAlbion.Game</Namespace>
   <Namespace>UAlbion.Game.Assets</Namespace>
+  <Namespace>UAlbion.Formats.Ids</Namespace>
   <RuntimeVersion>6.0</RuntimeVersion>
 </Query>
 
@@ -25,23 +26,23 @@ readonly AssetType[] TypesToConvert = new[] {
 	AssetType.MapText,
 	AssetType.Labyrinth,
 	AssetType.Map,
-	AssetType.Monster,
-	AssetType.Npc,
-	AssetType.Party,
-	AssetType.LargePartyGraphics,
-	AssetType.SmallPartyGraphics,
+	AssetType.MonsterSheet,
+	AssetType.NpcSheet,
+	AssetType.PartySheet,
+	AssetType.PartyLargeGfx,
+	AssetType.PartySmallGfx,
 	AssetType.Portrait,
-	AssetType.FullBodyPicture,
+	AssetType.PartyInventoryGfx,
 	AssetType.Word,
-	AssetType.TacticalIcon,
+	AssetType.TacticalGfx,
 };
 
-const UAlbion.Base.SmallNpc          SmallNpcId = UAlbion.Base.SmallNpc.Man;
-const UAlbion.Base.LargeNpc          LargeNpcId = UAlbion.Base.LargeNpc.Rainer;
-const UAlbion.Base.MonsterGraphics MonsterGfxId = UAlbion.Base.MonsterGraphics.Security;
-const UAlbion.Base.DungeonObject   DungeonObjId = UAlbion.Base.DungeonObject.Security;
-const UAlbion.Base.Portrait     PartyPortraitId = UAlbion.Base.Portrait.Rainer;
-const UAlbion.Base.Portrait       NpcPortraitId = UAlbion.Base.Portrait.RainerHofstedt;
+const UAlbion.Base.NpcSmallGfx   NpcSmallGfxId = UAlbion.Base.NpcSmallGfx.Man;
+const UAlbion.Base.NpcLargeGfx   NpcLargeGfxId = UAlbion.Base.NpcLargeGfx.Rainer;
+const UAlbion.Base.MonsterGfx    MonsterGfxId = UAlbion.Base.MonsterGfx.Security;
+const UAlbion.Base.DungeonObject DungeonObjId = UAlbion.Base.DungeonObject.Security;
+const UAlbion.Base.Portrait      PartyPortraitId = UAlbion.Base.Portrait.Rainer;
+const UAlbion.Base.Portrait      NpcPortraitId = UAlbion.Base.Portrait.RainerHofstedt;
 
 void Main()
 {
@@ -49,50 +50,50 @@ void Main()
 	var scriptDir = Path.GetDirectoryName(Util.CurrentQueryPath); // should be something like .../mods/ReinerRainer
 	var baseDir = Path.GetDirectoryName(Path.GetDirectoryName(scriptDir));
 
-	var disk = new FileSystem();
-	disk.CurrentDirectory = baseDir;
+	var disk = new FileSystem(baseDir);
 	AssetSystem.LoadEvents();
-	var baseExchange = AssetSystem.SetupSimple(disk, AssetMapping.Global, new[] { "Base" });
+	var baseExchange = AssetSystem.SetupSimple(disk, AssetMapping.Global, new[] { "Albion" });
+
 	var assets = baseExchange.Resolve<IAssetManager>();
-	var rainerSheet = assets.LoadSheet(UAlbion.Base.PartyMember.Rainer);
-	var securitySheet = assets.LoadSheet(UAlbion.Base.Monster.Secu1);
+	var rainerSheet = assets.LoadSheet(UAlbion.Base.PartySheet.Rainer);
+	var securitySheet = assets.LoadSheet(UAlbion.Base.MonsterSheet.Secu1);
 	var partyPortrait = assets.LoadTexture(PartyPortraitId);
 	var npcPortrait = assets.LoadTexture(NpcPortraitId);
-	var largePartyGfx = assets.LoadTexture(UAlbion.Base.LargePartyMember.Rainer);
-	var smallPartyGfx = assets.LoadTexture(UAlbion.Base.SmallPartyMember.Rainer);
-	var fullBody = assets.LoadTexture(UAlbion.Base.FullBodyPicture.Rainer);
+	var largePartyGfx = assets.LoadTexture(UAlbion.Base.PartyLargeGfx.Rainer);
+	var smallPartyGfx = assets.LoadTexture(UAlbion.Base.PartySmallGfx.Rainer);
+	var fullBody = assets.LoadTexture(UAlbion.Base.PartyInventoryGfx.Rainer);
 	var dungeonObj = assets.LoadTexture(DungeonObjId);
-	var tacticalGfx = assets.LoadTexture(UAlbion.Base.TacticalGraphics.Rainer);
+	var tacticalGfx = assets.LoadTexture(UAlbion.Base.TacticalGfx.Rainer);
 
 	var extraIds = new[]
 	{
-		((SpriteId)SmallNpcId).ToString(),
+		((SpriteId)NpcSmallGfxId).ToString(),
 		((SpecialId)UAlbion.Base.Special.Words1).ToString(),
 		((SpecialId)UAlbion.Base.Special.Words2).ToString(),
 		((SpecialId)UAlbion.Base.Special.Words3).ToString(),
-		((SpriteId)LargeNpcId).ToString(),
+		((SpriteId)NpcLargeGfxId).ToString(),
 	};
 
 	var humanoidSmall = new[] {
-		UAlbion.Base.SmallNpc.Iskai,
-		UAlbion.Base.SmallNpc.Iskai2,
-		UAlbion.Base.SmallNpc.OldMan,
-		UAlbion.Base.SmallNpc.Man,
-		UAlbion.Base.SmallNpc.Woman,
-		UAlbion.Base.SmallNpc.Woman2,
-		UAlbion.Base.SmallNpc.Woman3,
-		UAlbion.Base.SmallNpc.Woman4,
-		UAlbion.Base.SmallNpc.Man2,
-		UAlbion.Base.SmallNpc.Man3,
-		UAlbion.Base.SmallNpc.Man4,
-		UAlbion.Base.SmallNpc.Man5,
-		UAlbion.Base.SmallNpc.Man6,
-		UAlbion.Base.SmallNpc.Krondir,
-		UAlbion.Base.SmallNpc.Krondir2,
-		UAlbion.Base.SmallNpc.EvilKangaroo,
-		UAlbion.Base.SmallNpc.PeskyWasp,
-		UAlbion.Base.SmallNpc.Man7,
-		UAlbion.Base.SmallNpc.FloatingHand,
+		UAlbion.Base.NpcSmallGfx.Iskai,
+		UAlbion.Base.NpcSmallGfx.Iskai2,
+		UAlbion.Base.NpcSmallGfx.OldMan,
+		UAlbion.Base.NpcSmallGfx.Man,
+		UAlbion.Base.NpcSmallGfx.Woman,
+		UAlbion.Base.NpcSmallGfx.Woman2,
+		UAlbion.Base.NpcSmallGfx.Woman3,
+		UAlbion.Base.NpcSmallGfx.Woman4,
+		UAlbion.Base.NpcSmallGfx.Man2,
+		UAlbion.Base.NpcSmallGfx.Man3,
+		UAlbion.Base.NpcSmallGfx.Man4,
+		UAlbion.Base.NpcSmallGfx.Man5,
+		UAlbion.Base.NpcSmallGfx.Man6,
+		UAlbion.Base.NpcSmallGfx.Krondir,
+		UAlbion.Base.NpcSmallGfx.Krondir2,
+		UAlbion.Base.NpcSmallGfx.EvilKangaroo,
+		UAlbion.Base.NpcSmallGfx.PeskyWasp,
+		UAlbion.Base.NpcSmallGfx.Man7,
+		UAlbion.Base.NpcSmallGfx.FloatingHand,
 	}.Select(x => (SpriteId)x).ToArray();
 
 	object Convert(AssetId id, object asset)
@@ -108,10 +109,10 @@ void Main()
 				{
 					case MapType.TwoDOutdoors:
 						if (humanoidSmall.Contains(npc.SpriteOrGroup))
-							npc.SpriteOrGroup = (SpriteId)SmallNpcId;
+							npc.SpriteOrGroup = (SpriteId)NpcSmallGfxId;
 						break;
 					case MapType.TwoD:
-						npc.SpriteOrGroup = (SpriteId)LargeNpcId;
+						npc.SpriteOrGroup = (SpriteId)NpcLargeGfxId;
 						break;
 				}
 			}
@@ -145,7 +146,7 @@ void Main()
 		
 		if (asset is CharacterSheet sheet)
 		{
-			if (id == (AssetId)(MonsterId)UAlbion.Base.Monster.ServiceRobot) return asset;
+			if (id == (AssetId)(MonsterId)UAlbion.Base.MonsterSheet.ServiceRobot) return asset;
 
 			if (sheet.Type == CharacterType.Party)
 				return rainerSheet;
@@ -172,18 +173,18 @@ void Main()
 		{
 			if (id.Type == AssetType.Portrait)
 				return (id.Id < 11) ? partyPortrait : npcPortrait;
-			if (id.Type == AssetType.LargePartyGraphics)
+			if (id.Type == AssetType.PartyLargeGfx)
 				return largePartyGfx;
-			if (id.Type == AssetType.SmallPartyGraphics)
+			if (id.Type == AssetType.PartySmallGfx)
 				return smallPartyGfx;
-			if (id.Type == AssetType.FullBodyPicture)
+			if (id.Type == AssetType.PartyInventoryGfx)
 				return fullBody;
-			if (id.Type == AssetType.LargeNpcGraphics)
+			if (id.Type == AssetType.NpcLargeGfx)
 				return largePartyGfx;
-			if (id.Type == AssetType.TacticalIcon && id.Id < 8)
+			if (id.Type == AssetType.TacticalGfx && id.Id < 8)
 				return tacticalGfx;
-			if (id == (AssetId)(SpriteId)SmallNpcId)
-				return assets.LoadTexture(UAlbion.Base.SmallPartyMember.Rainer);
+			if (id == (AssetId)(SpriteId)NpcSmallGfxId)
+				return assets.LoadTexture(UAlbion.Base.PartySmallGfx.Rainer);
 			
 			if (id == (AssetId)(SpriteId)MonsterGfxId)
 			{
@@ -202,7 +203,7 @@ void Main()
 		return asset;
 	}
 
-	var converter = new AssetConverter(AssetMapping.Global, disk, new FormatJsonUtil(), new[] { "Base" }, destMod);
+	var converter = new AssetConverter(AssetMapping.Global, disk, new FormatJsonUtil(), new[] { "Albion" }, destMod);
 	converter.Convert(null, TypesToConvert.ToHashSet(), null, Convert);
 	converter.Convert(extraIds, null, null, Convert);
 
@@ -289,7 +290,7 @@ string ProcessString(string s)
 	s = SurnameRegex.Replace(s, "Hofstedt");
 	
 	return s
-		.Replace("girlfriend", "\"girlfriend\"")
+		.Replace("girlfriend", "Rainerfriend")
 		.Replace("Dr..coll", "H..fstedt")
 		.Replace("Sebainah", "Ur-Rainer")
 		.Replace("Rainer-Hofstedt", "Rainer Hofstedt")
